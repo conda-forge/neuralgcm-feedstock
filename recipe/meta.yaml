@@ -1,13 +1,13 @@
 {% set name = "neuralgcm" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/neuralgcm-{{ version }}.tar.gz
-  sha256: e75889894e8948211cec9bf18c89df5e223ef5a6d9a6444bb42f4b36143a5c27
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/neuralgcm-{{ version }}.tar.gz
+  sha256: fcef5bdd5537a2a758248625992ff00c7f094430d90f06f703e4cfad74503010
 
 build:
   noarch: python
