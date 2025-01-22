@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "neuralgcm" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/neuralgcm-{{ version }}.tar.gz
-  sha256: fcef5bdd5537a2a758248625992ff00c7f094430d90f06f703e4cfad74503010
+  sha256: b473d0f3b817a16f48e6371f31b9ccd70aa4a7e631e1832153330e7e06e3db3f
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - dinosaur-dycore
+    - dinosaur-dycore  # dinosaur on PyPI
     - dm-haiku
     - gin-config
     - jax
