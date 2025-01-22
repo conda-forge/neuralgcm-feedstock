@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - dinosaur-dycore
+    - dinosaur-dycore  # dinosaur on PyPI
     - dm-haiku
     - gin-config
     - jax
