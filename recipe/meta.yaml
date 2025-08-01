@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "neuralgcm" %}
-{% set version = "1.1.2" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/neuralgcm-{{ version }}.tar.gz
-  sha256: b473d0f3b817a16f48e6371f31b9ccd70aa4a7e631e1832153330e7e06e3db3f
+  sha256: 24edbbb5d21e2d17a7475738f84602885eb011af3a23c33df293b2c5d10ac11c
 
 build:
   noarch: python
